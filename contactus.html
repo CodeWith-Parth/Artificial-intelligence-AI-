@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - AI Wonders</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<style>
+    /* Reset some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f5f5;
+    color: #333;
+    text-align: center;
+}
+
+/* Header styles */
+header {
+    background: linear-gradient(to bottom, #3498db, #2980b9);
+    color: #fff;
+    text-align: center;
+    padding: 2rem 0;
+}
+
+header h1 {
+    font-size: 2.5rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+/* Navigation styles */
+nav {
+    background-color: #333;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    padding: 1rem;
+}
+
+nav li {
+    display: inline;
+    margin-right: 1rem;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.1rem;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #3498db;
+}
+
+.active {
+    font-weight: bold;
+}
+
+/* Contact form section styles */
+.contact-form {
+    text-align: center;
+    padding: 4rem 0;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    color: #ff6f61;
+    text-transform: uppercase;
+}
+
+.contact-form p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+    color: #666;
+}
+
+
+/* Apply a modern style to the entire form */
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Style form groups for better spacing */
+.form-group {
+  margin-bottom: 20px;
+}
+
+/* Style labels for consistency */
+label {
+  display: block;
+  font-weight: bold;
+}
+
+/* Style text and email input fields */
+input[type="text"],
+input[type="email"],
+select,
+textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+/* Style the select dropdown */
+select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  padding: 10px;
+  background: #fff;
+  background-image: linear-gradient(45deg, transparent 50%, #007BFF 50%), linear-gradient(135deg, #007BFF 50%, transparent 50%);
+  background-position: calc(100% - 20px) calc(1em + 2px), calc(100% - 15px) calc(1em + 2px);
+  background-size: 5px 5px, 5px 5px;
+  background-repeat: no-repeat;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+/* Style the textarea */
+textarea {
+  resize: vertical;
+}
+
+/* Style the file input */
+input[type="file"] {
+  padding: 5px;
+}
+
+/* Style the submit button with a modern color scheme */
+button[type="submit"] {
+  background-color: #007BFF;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+/* Hover effect for the submit button */
+button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Apply a modern focus style for better usability */
+input:focus,
+select:focus,
+textarea:focus {
+  border: 1px solid #007BFF;
+  outline: none;
+}
+
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+}
+
+footer p {
+    font-size: 1rem;
+}
+
+.social-links {
+    margin-top: 1rem;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 0.5rem;
+}
+
+.social-links img {
+    width: 30px;
+    height: 30px;
+}
+
+</style>
+
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <p>We'd love to hear from you!</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="/about-ai.html">About AI</a></li>
+            <li><a href="/ai-applications.html">AI Applications</a></li>
+            <li><a href="/resources.html">Resources</a></li>
+            <li><a href="/contact-us.html" class="active">Contact Us</a></li>
+        </ul>
+    </nav>
+
+    <section class="contact-form">
+        <h2>Contact AI Wonders</h2>
+        <p>We're here to explore the world of AI with you. Send us your questions, thoughts, or any AI-related inquiries.</p>
+        <form>
+            <div class="form-group">
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" name="name" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="email">Your Email:</label>
+                <input type="email" id="email" name "email" required>
+            </div>
+    
+            <div class="form-group">
+                <label for="subject">Subject of Your AI Inquiry:</label>
+                <select id="subject" name="subject" required>
+                    <option value="General Inquiry">General Inquiry</option>
+                    <option value="AI Applications">AI Applications</option>
+                    <option value="Machine Learning">Machine Learning</option>
+                    <option value="Deep Learning">Deep Learning</option>
+                    <option value="Natural Language Processing">Natural Language Processing</option>
+                    <!-- Add more options as needed -->
+                </select>
+            </div>
+    
+            <div class="form-group">
+                <label for="message">Your Message:</label>
+                <textarea id="message" name="message" rows="4" required></textarea>
+            </div>
+    
+            <div class="form-group">
+                <label for="attachment">Attach an AI-related File (if needed):</label>
+                <input type="file" id="attachment" name="attachment">
+            </div>
+    
+            <button type="submit">Send Your AI Inquiry</button>
+        </form>
+    </section>
+    
+    
+    
+
+    <footer>
+        <p>&copy; 2023 AI Exploration Hub. All rights reserved.</p>
+        <div class="social-links">
+            <a href="https://www.facebook.com"><img src="fb.png" alt="Facebook Icon"></a>
+            <a href="https://twitter.com"><img src="twitter.jpg" alt="Twitter Icon"></a>
+            <a href="https://www.instagram.com"><img src="insta.jpg" alt="Instagram Icon"></a>
+        </div>
+    </footer>
+</body>
+</html>

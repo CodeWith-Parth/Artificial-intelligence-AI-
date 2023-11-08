@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Wonders</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="/index.html">
+<link rel="stylesheet" href="/about ai.html">
+<link rel="stylesheet" href="/ai application.html">
+<link rel="stylesheet" href="/contactus.html">
+</head>
+<style>
+    /* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header styles */
+.header {
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+}
+
+/* Navigation styles */
+.navigation {
+  background-color: #333;
+  text-align: center;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+.navigation li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.navigation a:hover {
+  color: #3498db;
+}
+
+.navigation .active {
+  color: #3498db;
+  font-weight: bold;
+}
+
+/* Resources section styles */
+.resources-section {
+  background-color: #fff;
+  padding: 4rem;
+  text-align: center;
+}
+
+.resources-section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Resource styles */
+.resource {
+  padding: 2rem;
+  text-align: center;
+  background-color: #f5f5f5;
+  margin-bottom: 2rem;
+  position: relative;
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+}
+
+.resource:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
+}
+
+.resource img {
+  width: 100%;
+  max-width: 220px;
+  height: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+.resource h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.resource p {
+  font-size: 1.1rem;
+  margin-bottom: 1.5rem;
+  color: #666;
+}
+
+.resource-link {
+  display: inline-block;
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+  color: #fff;
+  padding: 0.7rem 1.8rem;
+  text-decoration: none;
+  font-size: 1rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.resource-link:hover {
+  background: linear-gradient(to bottom, #2980b9, #3498db);
+}
+
+/* Image animation styles */
+.animate-fade {
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.animate-fade:hover {
+  opacity: 1;
+}
+
+.animate-slide {
+  transform: translateY(0);
+  transition: transform 0.3s;
+}
+
+.resource:hover .animate-slide {
+  transform: translateY(-10px);
+}
+
+.animate-scale {
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+
+.resource:hover .animate-scale {
+  transform: scale(1.05);
+}
+
+.animate-rotate {
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+
+.resource:hover .animate-rotate {
+  transform: rotate(5deg);
+}
+
+/* Featured content styles */
+.featured-content {
+  background-color: #fff;
+  padding: 4rem;
+  text-align: center;
+}
+
+.featured-content h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background: linear-gradient(to bottom, #2980b9, #3498db);
+}
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer p {
+  font-size: 1rem;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .navigation ul {
+    text-align: center;
+  }
+  
+  .navigation li {
+    display: block;
+    margin: 1rem 0;
+  }
+}
+
+</style>
+<body>
+  <header class="header">
+    <h1>AI Wonders</h1>
+    <p>Unveiling the Marvels of Artificial Intelligence</p>
+  </header>
+  
+  <nav class="navigation">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="/about ai.html">About AI</a></li>
+      <li><a href="/ai application.html">AI Applications</a></li>
+      <li><a href="#" class="active">Resources</a></li>
+      <li><a href="/contactus.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  
+  <div class="resources-section">
+    <h2>AI Resources</h2>
+    <p>Explore a wide range of resources that dive deep into the realm of Artificial Intelligence and its transformative influence:</p>
+  </div>
+  
+  <div class="resource">
+    <img src="/aibook.jpg" alt="AI Books" class="animate-fade">
+    <h3>AI Books</h3>
+    <p>Delve into a collection of thought-provoking books authored by AI pioneers and industry experts. These books cover a spectrum of AI concepts, machine learning techniques, and real-world applications.</p>
+    <a href="https://hackr.io/blog/artificial-intelligence-books" class="resource-link">Discover Books</a>
+  </div>
+  
+  <div class="resource">
+    <img src="/courses.jpg" alt="AI Courses" class="animate-slide">
+    <h3>AI Courses</h3>
+    <p>Elevate your understanding of AI through immersive online courses. Enroll in comprehensive courses designed to empower you with AI skills, from foundational principles to advanced algorithms.</p>
+    <a href="https://www.coursera.org/courses?query=artificial%20intelligence" class="resource-link">Explore Courses</a>
+  </div>
+  
+  <div class="resource">
+    <img src="/tutorials.jpg" alt="AI Tutorials" class="animate-scale">
+    <h3>AI Tutorials</h3>
+    <p>Embark on hands-on learning with AI tutorials. From beginner-friendly guides to complex coding projects, these tutorials offer step-by-step instructions to build your AI expertise.</p>
+    <a href="https://www.javatpoint.com/artificial-intelligence-ai" class="resource-link">View Tutorials</a>
+  </div>
+  
+  <div class="resource">
+    <img src="/community.png" alt="AI Community" class="animate-rotate">
+    <h3>AI Community</h3>
+    <p>Join an enthusiastic AI community where knowledge flows freely. Engage in discussions, share insights, and collaborate with fellow AI enthusiasts, researchers, and professionals.</p>
+    <a href="https://www.thecommunityai.org/" class="resource-link">Join Community</a>
+  </div>
+  
+  <section class="featured-content">
+    <h2>Empower Your AI Journey</h2>
+    <p>Unlock the potential of AI through these carefully curated resources. Whether you're a newcomer or an AI veteran, there's always more to explore in the dynamic field of Artificial Intelligence.</p>
+    <a href="/contactus.html" class="cta-button">Get Started</a>
+  </section>
+  
+  <footer class="footer">
+    <p>&copy; 2023 AI Exploration Hub. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/"><img src="fb.png" alt="Facebook"></a>
+      <a href="https://twitter.com/"><img src="twitter.jpg" alt="Twitter"></a>
+      <a href="https://www.instagram.com/"><img src="insta.jpg" alt="Instagram"></a>
+    </div>
+  </footer>
+</body>
+</html>

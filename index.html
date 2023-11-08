@@ -1,0 +1,329 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AI Wonders</title>
+<link rel="stylesheet" href="styles.css">
+<link rel="stylesheet" href="/about ai.html">
+<link rel="stylesheet" href="/ai application.html">
+<link rel="stylesheet" href="/Resources.html">
+<link rel="stylesheet" href="/contactus.html">
+</head>
+<style>
+   /* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+  color: #333;
+}
+
+/* Header styles */
+.header {
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+  color: #fff;
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.header h1 {
+  font-size: 2.5rem;
+}
+
+.header p {
+  font-size: 1.2rem;
+}
+
+/* Navigation styles */
+.navigation {
+  background-color: #333;
+  text-align: center;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 1rem;
+}
+
+.navigation li {
+  display: inline;
+  margin-right: 1rem;
+}
+
+.navigation a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+}
+
+.navigation a:hover {
+  color: #3498db;
+}
+
+.navigation .active {
+  color: #3498db;
+  font-weight: bold;
+}
+
+.cta-button {
+  display: inline-block;
+  background: linear-gradient(to bottom, #3498db, #2980b9);
+  color: #fff;
+  padding: 1rem 2rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+  border-radius: 5px;
+  transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+  background: linear-gradient(to bottom, #2980b9, #3498db);
+}
+
+/* Features section styles */
+.features {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 4rem 0;
+}
+
+.feature {
+  flex: 1;
+  text-align: center;
+  margin: 1.5rem;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.feature:hover {
+  transform: translateY(-10px);
+  box-shadow: 0px 14px 20px rgba(0, 0, 0, 0.1);
+}
+
+.feature img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 1.5rem;
+  border-radius: 8px;
+}
+
+.feature h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.feature p {
+  font-size: 1.1rem;
+  color: #666;
+}
+/* Explore More section styles */
+.explore-more {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.explore-more h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.explore-images {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 2rem 0;
+}
+
+.explore-images img {
+  max-width: 100%;
+  height: auto;
+  margin: 0 1rem;
+  border-radius: 8px;
+}
+
+.explore-more p {
+  font-size: 1.1rem;
+  margin-bottom: 1rem;
+  color: #666;
+}
+
+/* Explore More section styles
+.explore-more {
+  background-color: #f5f5f5;
+  text-align: center;
+  padding: 4rem 0;
+}
+
+.explore-more h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #333;
+}
+
+.explore-more p {
+  font-size: 1.1rem;
+  margin-bottom: 2rem;
+  color: #666;
+} */
+
+/* Footer styles */
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.footer p {
+  font-size: 1rem;
+}
+
+.social-links {
+  margin-top: 1rem;
+}
+
+.social-links a {
+  display: inline-block;
+  margin: 0 0.5rem;
+}
+
+.social-links img {
+  width: 30px;
+  height: 30px;
+}
+
+/* Image animation styles */
+.animate-fade {
+  opacity: 0.9;
+  transition: opacity 0.3s;
+}
+
+.feature:hover .animate-fade {
+  opacity: 1;
+}
+
+.animate-slide {
+  transform: translateY(0);
+  transition: transform 0.3s;
+}
+
+.feature:hover .animate-slide {
+  transform: translateY(-10px);
+}
+
+.animate-scale {
+  transform: scale(1);
+  transition: transform 0.3s;
+}
+
+.feature:hover .animate-scale {
+  transform: scale(1.05);
+}
+
+.animate-rotate {
+  transform: rotate(0deg);
+  transition: transform 0.3s;
+}
+
+.feature:hover .animate-rotate {
+  transform: rotate(5deg);
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .header {
+    padding: 4rem 0 2rem;
+  }
+  
+  .feature {
+    flex: 1 1 100%;
+  }
+}
+
+</style>
+<body>
+  <header class="header">
+    <h1>AI Wonders</h1>
+    <p>Unveiling the Marvels of Artificial Intelligence</p>
+  </header>
+  
+  <nav class="navigation">
+    <ul>
+      <li><a href="#" class="active">Home</a></li>
+      <li><a href="/about ai.html">About AI</a></li>
+      <li><a href="/ai application.html">AI Applications</a></li>
+      <li><a href="/Resources.html">Resources</a></li>
+      <li><a href="/contactus.html">Contact Us</a></li>
+    </ul>
+  </nav>
+  
+  <section class="features">
+    <div class="feature">
+      <img src="/i1.jpg" alt="AI Image 1" class="animate-fade">
+      <h2>AI in Healthcare</h2>
+      <p>Discover how AI is reshaping medical diagnostics, drug discovery, and personalized patient care.</p>
+    </div>
+    
+    <div class="feature">
+      <img src="/i2.jpg" alt="AI Image 2" class="animate-slide">
+      <h2>AI in Finance</h2>
+      <p>Explore the synergy of AI and finance, from algorithmic trading to fraud detection and risk assessment.</p>
+    </div>
+    
+    <div class="feature">
+      <img src="/i3.jpg" alt="AI Image 3" class="animate-scale">
+      <h2>AI in Education</h2>
+      <p>Experience the future of learning with AI-driven virtual classrooms, personalized curriculum, and educators.</p>
+    </div>
+    
+    <div class="feature">
+      <img src="/i4.jpg" alt="AI Image 4" class="animate-rotate">
+      <h2>AI in Entertainment</h2>
+      <p>Immerse yourself in AI-generated art, music, and interactive experiences that redefine creativity.</p>
+    </div>
+    
+    <div class="feature">
+      <img src="/i5.jpg" alt="AI Image 5" class="animate-slide">
+      <h2>AI in Automation</h2>
+      <p>Explore how AI-powered automation is streamlining industries, enhancing productivity, and shaping the workforce.</p>
+    </div>
+  </section>
+  
+  <section class="explore-more">
+    <h2>Experience AI Exploration Hub</h2>
+    <p>Step into the future with AI Exploration Hub. Immerse yourself in a world where AI-driven innovation knows no bounds.</p>
+    <div class="explore-images">
+      <img src="/i6.jpg" alt="AI Image 6" class="animate-scale">
+      <img src="/i7.jpg" alt="AI Image 7" class="animate-slide">
+    </div>
+    <p>From life-changing healthcare breakthroughs to mind-bending entertainment, AI is reshaping how we live, work, and play.</p>
+    <p>Join us as we navigate the frontiers of AI research, applications, and the exciting prospects that lie ahead.</p>
+    <a href="/about ai.html" class="cta-button">Learn More</a>
+  </section>
+  
+  <footer class="footer">
+    <p>&copy; 2023 AI Exploration Hub. All rights reserved.</p>
+    <div class="social-links">
+      <a href="https://www.facebook.com/"><img src="fb.png" alt="Facebook"></a>
+      <a href="https://twitter.com/"><img src="twitter.jpg" alt="Twitter"></a>
+      <a href="https://www.instagram.com/"><img src="insta.jpg" alt="Instagram"></a>
+    </div>
+  </footer>
+</body>
+</html>
